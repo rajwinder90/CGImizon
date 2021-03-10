@@ -1,0 +1,16 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block \Netsmartz\AdditionalField\Block\Catalog\Product\View\IsbnNumber */
+?>
+<?php $_product = $block->getProduct(); ?>
+<?php $isbnNumber = $_product->getCustomAttribute('isbn_number');?>
+<?php if ($isbnNumber != ''): ?>
+<div class="value"><strong><?= $block->escapeHtml(__('ISBN Number:')) ?></strong>
+  <?php echo $_product->getCustomAttribute('isbn_number')->getValue(); ?>
+</div>
+<?php endif; ?>
+

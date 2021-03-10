@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * AdditionalField Productview xml.
+ * @category  Ntz
+ * @package   Ntz_AdditionalField
+ * @author    Rajwinder
+ * @copyright Copyright (c) 2021 Netsmartz Limited
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.form.content">
+            <block class="Netsmartz\AdditionalField\Block\Catalog\Product\View\IsbnNumber" name="product.isbn.number" after="product.info.addtocart"
+             template="Netsmartz_AdditionalField::product/view/isbnNumber.phtml">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,34 @@
+<?php
+/**
+ * ElasticSearch Product list template
+ */
+?>
+<?php 
+
+/** @var \Netsmartz\ElasticSearch\Block\Index $block */
+$elasticProduct = $block->getProductsApi(); 
+?>
+<table>
+    <thead >
+        <tr>
+            <th>Product Name</th>
+            <th>ISBN Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        $isbnNumber = "";
+        foreach ($elasticProduct as $product ) :
+            if(isset($product['_source']['isbn_number'])):
+                $isbnNumber = $product['_source']['isbn_number'];
+            else: 
+                $isbnNumber = "";
+            endif;
+
+            if($isbnNumber != ""):
+                 echo "<tr><td>".$product['_source']['name']."</td><td>".$isbnNumber."</td></tr>";
+            endif;
+        endforeach; 
+        ?>
+   </tbody>
+</table>

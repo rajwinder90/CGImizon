@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ElasticSearch xml.
+ * @category  Netsmartz
+ * @package   Netsmartz_ElasticSearch
+ * @author    Rajwinder
+ * @copyright Copyright (c) 2021 Netsmartz Limited
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+      <title>Elastic Search Products List</title>
+    </head>
+     <body>
+    <referenceContainer name="content">
+        <block class="Netsmartz\ElasticSearch\Block\Index" name="elasticsearchproduct_index_index" template="Netsmartz_ElasticSearch::getelasticproduct.phtml" />
+    </referenceContainer>
+     </body>
+</page>
+

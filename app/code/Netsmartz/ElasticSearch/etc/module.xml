@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ElasticSearch module xml.
+ * @category  Netsmartz
+ * @package   Netsmartz_ElasticSearch
+ * @author    Rajwinder
+ * @copyright Copyright (c) 2021 Netsmartz Limited
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Netsmartz_ElasticSearch" setup_version="1.0.0">
+    </module>
+</config>

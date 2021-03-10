@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * AdditionalField di xml.
+ * @category  Netsmartz
+ * @package   Netsmartz_AdditionalField
+ * @author    Rajwinder
+ * @copyright Copyright (c) 2020 Netsmartz Limited
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">    
+    <!-- override cart/item/default.phtml file -->
+    <type name="Magento\Checkout\Block\Cart\AbstractCart">
+        <plugin name="add_isbn_value_cart" type="Netsmartz\AdditionalField\Plugin\Cart\AbstractCart" sortOrder="1"/>
+    </type>    
+</config>

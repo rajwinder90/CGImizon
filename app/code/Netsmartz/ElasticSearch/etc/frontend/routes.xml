@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * ElasticSearch routes xml.
+ * @category  Netsmartz
+ * @package   Netsmartz_ElasticSearch
+ * @author    Rajwinder
+ * @copyright Copyright (c) 2021 Netsmartz Limited
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route frontName="elasticsearchproduct" id="elasticsearchproduct">
+            <module name="Netsmartz_ElasticSearch"/>
+        </route>
+    </router>
+</config>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * AdditionalField catalog attribute xml.
+ * @category  Netsmartz
+ * @package   Netsmartz_AdditionalField
+ * @author    Rajwinder
+ * @copyright Copyright (c) 2021 Netsmartz Limited
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Catalog:etc/catalog_attributes.xsd">
+    <group name="quote_item">
+        <attribute name="isbn_number"/>
+    </group>
+</config>
