@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ElasticSearch system xml.
+ * @category  Netsmartz
+ * @package   Netsmartz_ElasticSearch
+ * @author    Rajwinder
+ * @copyright Copyright (c) 2021 Netsmartz Limited
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="netsmartz" translate="label" sortOrder="10">
+            <label>Netsmartz</label>
+        </tab>
+        <section id="elasticsearch" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>ElasticSearch</label>
+            <tab>netsmartz</tab>
+            <resource>'Netsmartz_ElasticSearch::elasticsearch_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Elasticsearch Url</label>
+                <field id="elastic_url" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enter elastic search connection url</label>
+                    <comment>Please click on this link (http://localhost:9200/_cat/indices?v) to get elasticsearch index for your magento store.Use this elasticsearch index into your url like this("localhost:9200/magentocgi_product_1_v2/) Here "magentocgi_product_1_v2" is elasticsearch index you can replace with your magento elasticsearch index.
+                    </comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
